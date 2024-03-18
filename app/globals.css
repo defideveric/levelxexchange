@@ -3,6 +3,42 @@
 @tailwind utilities;
 
  body {
-  background-color: #373743;
+  background-color: #1A1E23;
+  font-family: Helvetica, Arial, sans-serif;
   color: white;
  }
+
+ .blue-glassmorphism {
+    background: rgb(39, 51, 89, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  
+  /* white glassmorphism */
+  .white-glassmorphism {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+
+
+  .head_text {
+    @apply mt-5 text-4xl font-extrabold leading-[1.15] text-white sm:text-6xl;
+  }
+
+  .orange_gradient {
+    @apply bg-gradient-to-r from-purple-500 via-indigo-600 to-indigo-100 bg-clip-text text-transparent text-5xl;
+  }
+
+  .desc {
+    @apply mt-5 text-lg text-white sm:text-xl font-light text-center;
+  }
+
+
+

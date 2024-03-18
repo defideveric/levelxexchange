@@ -1,7 +1,9 @@
+import Welcome from "../components/Welcome";
+
 export default function Page() {
   return (
     <main>
-      Home
+      <Welcome/>
     </main>
   );
 }
