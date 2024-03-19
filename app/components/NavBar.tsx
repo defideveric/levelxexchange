@@ -25,9 +25,11 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="w-full flex md:justify-center justify-between items-center p-4">
+    <nav className="w-full flex md:justify-center justify-between items-center">
       <div className="md:flex-[0.5] flex-initial justify-center items-center text-2xl font-bold">
-        Level X
+        <Link href="/home">
+          <Image src="/levelX.png" alt='logo' width={150} height={100}/>
+        </Link>
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         {[
@@ -38,8 +40,8 @@ export default function NavBar() {
         ].map(({ title, path }, index) => (
           <NavBarItem key={path + index} title={title} path={path} />
         ))}
-        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
-          Login
+        <li className="bg-purple-500 py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-indigo-300">
+          Launch App
         </li> 
       </ul>
       <div className="flex relative">
