@@ -30,6 +30,32 @@
   }
 
 
+  /* Media queries for different viewport sizes */
+@media (max-width: 1200px) {
+  .main:after {
+    background-size: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .main:after {
+    background-size: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main:after {
+    background-size: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .main:after {
+    background-size: 20%;
+  }
+}
+
+
   .blue-glassmorphism {
     background: rgb(39, 51, 89, 0.4);
     border-radius: 16px;
